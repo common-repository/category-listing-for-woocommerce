@@ -1,0 +1,409 @@
+/* =Headlines
+-------------------------------------------------------------- */
+.category-listing__heading {
+    clear: both;
+    display: block;
+}
+
+.product-listing-headline {
+    margin: 20px 0;
+    clear: both;
+    display: block;
+}
+
+/* =List elements
+-------------------------------------------------------------- */
+.category-listing {
+    /*activating flex*/
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+    
+    /*removing list properties*/
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    /*clear container*/
+    clear: both;
+}
+
+.category-listing .category-listing__item {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    position: relative;
+    padding: 0;
+    margin: 0 0.571428571428571% 0.5em 0;
+    
+    /*flex properties*/
+	-ms-flex: 0 0 12%;
+	flex: 0 0 12%;
+	max-width: 12%;
+}
+
+.category-listing .category-listing__item:nth-child(8n) { 
+    margin: 0 0 0.5em 0;
+}
+
+.category-listing .category-listing__item h2 {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0;
+}
+
+.category-listing .category-listing__item a {
+    text-decoration: none;
+}
+
+.category-listing .category-listing__item img {
+    border-bottom: 1px solid rgba(0,0,0,0.125);
+    border-radius: 0;
+}
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media (max-width:1200px) {
+    .category-listing .category-listing__item {
+        margin: 0 0.8% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 16%;
+        flex: 0 0 16%;
+        max-width: 16%;
+    }
+
+    .category-listing .category-listing__item:nth-child(8n) { 
+        margin: 0 0.8% 0.5em 0;
+    }
+
+    .category-listing .category-listing__item:nth-child(6n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* =iPad landscape
+-------------------------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .category-listing .category-listing__item {
+        margin: 0 1% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 19.2%;
+        flex: 0 0 19.2%;
+        max-width: 19.2%;
+    }
+
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n) { 
+        margin: 0 1% 0.5em 0;
+    }
+
+    .category-listing .category-listing__item:nth-child(5n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+@media (max-width:1024px) {
+    .category-listing .category-listing__item {
+        margin: 0 1% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 19.2%;
+        flex: 0 0 19.2%;
+        max-width: 19.2%;
+    }
+
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n) { 
+        margin: 0 1% 0.5em 0;
+    }
+
+    .category-listing .category-listing__item:nth-child(5n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* =iPad Portrait
+-------------------------------------------------------------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .category-listing .category-listing__item {
+        margin: 0 1.333334% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        max-width: 24%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n) { 
+        margin: 0 1.333334% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+@media (max-width:768px) {
+    .category-listing .category-listing__item {
+        margin: 0 1.333334% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        max-width: 24%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n) { 
+        margin: 0 1.333334% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+      
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) { 
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) { 
+
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: landscape) { 
+    .category-listing .category-listing__item {
+        margin: 0 1.333334% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        max-width: 24%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n) { 
+        margin: 0 1.333334% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media (max-width:415px) {
+    .category-listing .category-listing__item {
+        margin: 0 2% 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n) { 
+        margin: 0 2% 0.5em 0;
+    }
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* ----------- Wearables ----------- */
+/* Apple Watch */
+@media
+(max-device-width: 42mm)
+and (min-device-width: 38mm) { 
+    .category-listing .category-listing__item {
+        margin: 0 0 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n),
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
+
+/* Moto 360 Watch */
+@media 
+(max-device-width: 218px)
+and (max-device-height: 281px) { 
+    .category-listing .category-listing__item {
+        margin: 0 0 0.5em 0;
+
+        /*flex properties*/
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .category-listing .category-listing__item:nth-child(8n),
+    .category-listing .category-listing__item:nth-child(6n),
+    .category-listing .category-listing__item:nth-child(5n),
+    .category-listing .category-listing__item:nth-child(4n),
+    .category-listing .category-listing__item:nth-child(2n) { 
+        margin: 0 0 0.5em 0;
+    }
+}
